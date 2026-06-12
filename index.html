@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Tags -->
+  <title>Safe Space Maker | Free & Safe Disk Cleanup Utility for Windows</title>
+  <meta name="description" content="Safe Space Maker is a free, ultra-fast, local, and private disk cleanup tool for Windows. Scan drives, identify large temporary files, and reclaim storage space safely.">
+  <meta name="keywords" content="disk cleanup, storage space, clean drive, windows cleanup, python disk scan, free disk space, large file finder">
+  <meta name="author" content="Space Maker team">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Safe Space Maker | Free & Safe Disk Cleanup Utility">
+  <meta property="og:description" content="An ultra-fast, offline-first storage scanner and cleanup helper. Reclaim gigabytes of space in seconds.">
+  <meta property="og:image" content="assets/preview.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">
+        <span>Safe Space Maker</span>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <div>
+        <a href="dist/SafeSpaceMaker.exe" class="gradient-border-btn download-btn" id="download-btn-header">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          </svg>
+          Download Free
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section (Centered) -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-center">
+        <h1>Reclaim Your Disk Space, <span class="gradient-text">Safely & Privately</span></h1>
+        <p class="subtitle">An ultra-fast, local storage scanner that lists massive files, hidden directories, and temporary system caches. Review your data, apply exclusion rules, and move files safely to the Recycle Bin in a single click.</p>
+        
+        <div class="hero-actions">
+          <div class="hero-buttons">
+            <a href="dist/SafeSpaceMaker.exe" class="primary-btn download-btn" id="download-btn-hero" download>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="22" height="22">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              Download for Windows
+            </a>
+            <a href="https://github.com/khushaniitram/Space_maker" target="_blank" rel="noopener" class="gradient-border-btn" id="github-btn-hero">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="20" height="20">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577v-2.234c-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22v3.293c0 .319.22.694.825.576C20.565 21.795 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              View on GitHub
+            </a>
+          </div>
+          
+          <div class="download-meta">
+            <div class="meta-item">
+              <span>Version 1.0.0</span>
+            </div>
+            <div class="meta-divider"></div>
+            <div class="meta-item">
+              <span>Windows 10 / 11 (64-bit)</span>
+            </div>
+            <div class="meta-divider"></div>
+            <div class="meta-item">
+              <span>Size: ~10.4 MB</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="showcase-container">
+          <div class="showcase-glow"></div>
+          <div class="showcase-mockup">
+            <div class="mockup-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="mockup-title">SafeSpaceMaker.exe</span>
+            </div>
+            <img src="assets/preview.png?v=2" alt="Safe Space Maker Dashboard Preview" class="showcase-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>Core Features for Worry-Free Cleanup</h2>
+          <p>Unlike standard registry scanners or third-party bloatware, Safe Space Maker keeps things local, readable, and highly configurable.</p>
+        </div>
+        
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <h3>Safety-First Architecture</h3>
+            <p>Critical operating system folders (like <code>C:\Windows</code>, <code>C:\Program Files</code>) and system states are automatically scanned for auditing but strictly blocked from deletion.</p>
+          </div>
+          
+          <!-- Feature 2 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+            </div>
+            <h3>100% Offline & Private</h3>
+            <p>Your files are personal. The program runs completely locally, does not require an internet connection, and never transmits diagnostic files or lists of your folders anywhere.</p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+              </svg>
+            </div>
+            <h3>Recycle Bin Integration</h3>
+            <p>No sudden permanent deletions. Deletable items are moved to the Windows Recycle Bin using native shell operations, allowing you to restore them easily if you change your mind.</p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+              </svg>
+            </div>
+            <h3>Custom Exclusion Lists</h3>
+            <p>Type in custom paths or select scan results to add to a permanent "never delete" list. This protects critical files or folders of your choice during any cleanup pass.</p>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+            <h3>Deep Storage Auditing</h3>
+            <p>Includes a "Deep Audit" toggle to display large user files (e.g., zip files, ISOs, videos) inside user folders and downloads, giving you absolute clarity over where your storage went.</p>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3>Ultra-Lightweight & Fast</h3>
+            <p>Written in native Python utilizing optimized multi-threaded scanning algorithms to traverse directory structures without locking your interface or hogging system memory.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <h2>Reclaim Space in 3 Simple Steps</h2>
+          <p>You are in complete control of every action. Safe Space Maker never deletes anything without your approval.</p>
+        </div>
+        
+        <div class="steps-grid">
+          <!-- Step 1 -->
+          <div class="step-card">
+            <div class="step-number">01</div>
+            <h3>Select Drives & Options</h3>
+            <p>Select which connected fixed or removable drives you want to scan. Set minimum file size parameters (e.g., 25MB) and choose whether to perform a light cleanup scan or a deep audit.</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card">
+            <div class="step-number">02</div>
+            <h3>Scan & Analyze</h3>
+            <p>Run the multithreaded scanner. Review the list of large files and folders along with metadata like modified date, paths, and clear explanations of why they are classified as cleanup candidates.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <div class="step-number">03</div>
+            <h3>Confirm & Recycle</h3>
+            <p>Select the candidates you want to clean up. Click "Delete Selected" to review a batch summary and securely move the chosen files and folders directly to the native Windows Recycle Bin.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>Got questions about how Safe Space Maker operates? We have answers.</p>
+        </div>
+        
+        <div class="faq-grid">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Is Safe Space Maker safe to use?</span>
+              <span class="faq-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </span>
+            </div>
+            <div class="faq-answer">
+              Yes, safety is the core focus of Safe Space Maker. The application hardcodes a comprehensive list of system paths (such as <code>C:\Windows</code>, <code>C:\Program Files</code>, and <code>AppData</code>) and blocks them from deletion. Additionally, it features a custom exclusion list to safeguard user-specified folders, and all deletions are sent to the Windows Recycle Bin instead of being permanently erased, allowing for easy restoration.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How do I run the application?</span>
+              <span class="faq-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </span>
+            </div>
+            <div class="faq-answer">
+              Safe Space Maker is packaged as a standalone 64-bit Windows executable. Simply download <code>SafeSpaceMaker.exe</code>, move it to any directory, and double-click to run. There is no installation process, registry modification, or complex setup required.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Does the application run offline?</span>
+              <span class="faq-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </span>
+            </div>
+            <div class="faq-answer">
+              Absolutely. Safe Space Maker runs entirely offline on your local computer. It does not contain any networking code, telemetry hooks, or analytics collection, ensuring complete privacy for your files and directory structures.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What are cleanup candidates vs. audit items?</span>
+              <span class="faq-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </span>
+            </div>
+            <div class="faq-answer">
+              "Cleanup candidates" are temp files, backup files, and compiler caches (like <code>__pycache__</code> or <code>.tmp</code> files) that are safe to delete. "Audit items" (shown under Deep Audit) are large user files (videos, zip archives, installers) that are displayed for you to review and decide if you want to delete them. Safe Space Maker explicitly labels each file's status so you know exactly what is protected and what is deletable.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Ready to Declutter Your Drives?</h2>
+          <p>Get the standalone executable for Windows and start scanning in seconds. Free, offline, open source, and lightweight.</p>
+          <a href="dist/SafeSpaceMaker.exe" class="primary-btn download-btn" id="download-btn-footer" download>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="22" height="22">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            Download for Windows
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo">
+          <span>Safe Space Maker</span>
+        </div>
+        <div class="footer-links">
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#faq">FAQ</a>
+          <a href="https://github.com/khushaniitram/Space_maker" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Safe Space Maker. Released under the MIT License.</p>
+        <p>Built locally for privacy-focused disk management.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
